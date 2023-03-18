@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  align-content: center;
+}
+
+.left-top__side img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Left gets z index change based on size */
