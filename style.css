@@ -6,14 +6,34 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: Ubunto;
+  src: url('./assets/fonts/Ubuntu-Regular.ttf');
+}
+@font-face {
+  font-family: Ubunto;
+  font-weight: medium;
+  src: url('./assets/fonts/Ubuntu-Medium.ttf');
+}
+@font-face {
+  font-family: Ubunto;
+  font-weight: bold;
+  src: url('./assets/fonts/Ubuntu-Bold.ttf');
+}
+
 html {
   font-size: 62.5%;
+  font-family: Ubunto, sans-serif;
 }
 
 body {
   height: 100vh;
   font-size: 1.6rem;
   text-align: center;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 .container {
@@ -47,4 +67,5 @@ body {
   border-radius: 50%;
   display: grid;
   align-content: center;
+  color: white;
 }
