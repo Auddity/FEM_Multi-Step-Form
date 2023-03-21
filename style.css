@@ -26,13 +26,25 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  /* For mobile image is moved out of flow */
+  /* Left gets z index change based on size */
 }
 
 .step-status-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  padding-inline: 2rem;
+  padding-inline: 8rem;
+  padding-block-start: 4rem;
 }
 
-/* Left gets z index change based on size */
+.step-status-container .step-circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: grid;
+  align-content: center;
+}
