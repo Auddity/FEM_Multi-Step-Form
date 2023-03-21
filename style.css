@@ -23,16 +23,17 @@
 
 @font-face {
   font-family: Ubunto;
+  font-weight: 100;
   src: url('./assets/fonts/Ubuntu-Regular.ttf');
 }
 @font-face {
   font-family: Ubunto;
-  font-weight: medium;
+  font-weight: 400;
   src: url('./assets/fonts/Ubuntu-Medium.ttf');
 }
 @font-face {
   font-family: Ubunto;
-  font-weight: bold;
+  font-weight: 700;
   src: url('./assets/fonts/Ubuntu-Bold.ttf');
 }
 
@@ -92,6 +93,15 @@ h1 {
   text-align: left;
   padding-inline: 2rem;
   padding-block: 3rem;
-  margin-inline: auto;
   border-radius: 1.5rem;
+  margin-inline: auto;
+}
+
+.right-bottom__side h1 {
+  color: var(--Marine-blue);
+  padding-block-end: 1rem;
+}
+.right-bottom__side p {
+  color: var(--Cool-gray);
+  font-weight: 100;
 }
