@@ -6,8 +6,13 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   height: 100vh;
+  font-size: 1.6rem;
   text-align: center;
 }
 
@@ -21,6 +26,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.step-status-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-inline: 2rem;
 }
 
 /* Left gets z index change based on size */
