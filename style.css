@@ -6,6 +6,21 @@
   padding: 0;
 }
 
+:root {
+  /* Primary colors */
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Purplish-blue: hsl(243, 100%, 62%);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsl(206, 94%, 87%);
+  --Strawberry-red: hsl(354, 84%, 57%);
+  /* Neutral colors */
+  --Cool-gray: hsl(231, 11%, 63%);
+  --Light-gray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+}
+
 @font-face {
   font-family: Ubunto;
   src: url('./assets/fonts/Ubuntu-Regular.ttf');
@@ -30,6 +45,7 @@ body {
   height: 100vh;
   font-size: 1.6rem;
   text-align: center;
+  background-color: var(--Light-blue);
 }
 
 h1 {
@@ -57,15 +73,25 @@ h1 {
   display: flex;
   justify-content: space-around;
   padding-inline: 8rem;
-  padding-block-start: 4rem;
+  padding-block-start: 3rem;
 }
 
 .step-status-container .step-circle {
   width: 3.5rem;
   height: 3.5rem;
-  border: 1px solid white;
+  border: 1px solid var(--Magnolia);
   border-radius: 50%;
   display: grid;
   align-content: center;
-  color: white;
+  color: var(--Magnolia);
+}
+
+.right-bottom__side {
+  background-color: var(--White);
+  width: 90%;
+  text-align: left;
+  padding-inline: 2rem;
+  padding-block: 3rem;
+  margin-inline: auto;
+  border-radius: 1.5rem;
 }
