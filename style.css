@@ -43,7 +43,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   font-size: 1.6rem;
   text-align: center;
 }
@@ -57,7 +57,7 @@ h1 {
 }
 
 .container {
-  height: 55rem;
+  height: 100%;
   display: grid;
   align-content: center;
   background-color: var(--Light-blue);
@@ -100,6 +100,7 @@ h1 {
   padding-block: 3rem;
   border-radius: 1.5rem;
   margin-inline: auto;
+  margin-block-start: 10rem;
   z-index: 1;
 }
 
@@ -134,15 +135,19 @@ h1 {
 }
 
 /* page two */
-.page-two h3 {
-  padding-block-end: 0.5rem;
+.page-two h2 {
+  font-size: 1.6rem;
   color: var(--Marine-blue);
+  padding-block-end: 0.5rem;
+}
+.page-two p {
+  font-size: 1.6rem;
 }
 .page-two .form-control {
   padding: 1.6rem;
   border: 1px solid var(--Light-gray);
   border-radius: 1.2rem;
-  margin-block: 2rem;
+  margin-block: 1.2rem;
 }
 
 .page-two .form-control .tier-select {
@@ -153,10 +158,43 @@ h1 {
   padding-inline-end: 1.6rem;
 }
 
+.page-two .form-control .tier-select p {
+  font-size: 1.4rem;
+}
+
+.page-two .year-month__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Magnolia);
+  padding-block: 1.45rem;
+  border-radius: 1.45rem;
+  margin-block-start: 2.5rem;
+}
+
+.page-two .year-month__toggle .toggle-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 4rem;
+  height: 2.2rem;
+  background-color: var(--Marine-blue);
+  padding-inline: 0.5rem;
+  border-radius: 2rem;
+  margin-inline: 1.5rem;
+}
+
+.page-two .year-month__toggle .toggle-indicator .toggle-indicator-ball {
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: var(--Magnolia);
+  border-radius: 50%;
+}
+
 /* Next step / Previous step btns */
 .btn {
   position: absolute;
-  bottom: -22rem;
+  /* bottom: -22rem; */
   right: 1.5rem;
   font-family: inherit;
   color: var(--White);
