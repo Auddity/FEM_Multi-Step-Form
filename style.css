@@ -57,10 +57,12 @@ h1 {
 }
 
 .container {
+  position: relative;
   height: 100%;
   display: grid;
   align-content: center;
   background-color: var(--Light-blue);
+  padding-block-end: 4rem;
 }
 
 .steps-counter img {
@@ -100,7 +102,7 @@ h1 {
   padding-block: 3rem;
   border-radius: 1.5rem;
   margin-inline: auto;
-  margin-block-start: 10rem;
+  margin-block-start: 9.9rem;
   z-index: 1;
 }
 
@@ -194,7 +196,7 @@ h1 {
 /* Next step / Previous step btns */
 .btn {
   position: absolute;
-  /* bottom: -22rem; */
+  bottom: -5.3rem;
   right: 1.5rem;
   font-family: inherit;
   color: var(--White);
