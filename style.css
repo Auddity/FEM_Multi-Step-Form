@@ -113,19 +113,19 @@ h1 {
 }
 
 /* Form */
-.form-control {
+.page-one .form-control {
   display: flex;
   flex-direction: column;
   padding-block-start: 1.2rem;
 }
-.form-control label {
+.page-one .form-control label {
   font-size: 1.2rem;
   font-weight: 100;
   color: var(--Marine-blue);
   padding-block-end: 0.2rem;
 }
 
-.form-control input {
+.page-one .form-control input {
   padding: 1rem;
   font-weight: 700;
   color: var(--Cool-gray);
@@ -133,9 +133,30 @@ h1 {
   border: 1px solid var(--Light-gray);
 }
 
+/* page two */
+.page-two h3 {
+  padding-block-end: 0.5rem;
+  color: var(--Marine-blue);
+}
+.page-two .form-control {
+  padding: 1.6rem;
+  border: 1px solid var(--Light-gray);
+  border-radius: 1.2rem;
+  margin-block: 2rem;
+}
+
+.page-two .form-control .tier-select {
+  display: flex;
+}
+
+.page-two .form-control .tier-select img {
+  padding-inline-end: 1.6rem;
+}
+
+/* Next step / Previous step btns */
 .btn {
   position: absolute;
-  bottom: 35rem;
+  bottom: -22rem;
   right: 1.5rem;
   font-family: inherit;
   color: var(--White);
