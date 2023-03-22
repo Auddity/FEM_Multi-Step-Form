@@ -43,7 +43,6 @@ html {
 }
 
 body {
-  /* height: 100vh; */
   font-size: 1.6rem;
   text-align: center;
 }
@@ -116,6 +115,8 @@ h1 {
 }
 
 /* Form */
+/* Page One */
+/* TODO: Error handling */
 .page-one .form-control {
   display: flex;
   flex-direction: column;
@@ -137,6 +138,11 @@ h1 {
 }
 
 /* page two */
+/*
+ TODO: Type outline
+ TODO: Monthly/Yearly selected color
+ TODO: Toggle side shift
+*/
 .page-two h2 {
   font-size: 1.6rem;
   color: var(--Marine-blue);
@@ -194,15 +200,33 @@ h1 {
 }
 
 /* Next step / Previous step btns */
+/* 
+  TODO: Add Go Back button when not on card One
+*/
 .btn {
   position: absolute;
-  bottom: -5.3rem;
-  right: 1.5rem;
   font-family: inherit;
-  color: var(--White);
-  background-color: var(--Marine-blue);
   padding-block: 1.2rem;
   padding-inline: 1.3rem;
   border: none;
   border-radius: 0.5rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.next-btn {
+  bottom: -5.3rem;
+  right: 1.5rem;
+  color: var(--White);
+  background-color: var(--Marine-blue);
+}
+
+.back-btn {
+  bottom: -5.3rem;
+  left: 1.5rem;
+  background-color: var(--White);
+  color: var(--Cool-gray);
+  font-weight: 400;
 }
