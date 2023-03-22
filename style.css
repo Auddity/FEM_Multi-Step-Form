@@ -72,6 +72,8 @@ h1 {
   /* Left gets z index change based on size */
 }
 
+/* 
+TODO: background color and text color change when page is visible */
 .step-status-container {
   position: absolute;
   top: 0;
@@ -175,6 +177,7 @@ h1 {
   align-items: center;
   justify-content: center;
   background-color: var(--Magnolia);
+  color: var(--Cool-gray);
   padding-block: 1.45rem;
   border-radius: 1.45rem;
   margin-block-start: 2.5rem;
@@ -199,9 +202,13 @@ h1 {
   border-radius: 50%;
 }
 
+.toggle-on {
+  color: var(--Marine-blue);
+}
+
 /* Next step / Previous step btns */
 /* 
-  TODO: Add Go Back button when not on card One
+  TODO: Go Back button only visible when not on page one.
 */
 .btn {
   position: absolute;
