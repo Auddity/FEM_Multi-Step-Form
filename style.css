@@ -52,6 +52,10 @@ h1 {
   font-weight: bold;
 }
 
+.hide {
+  display: none;
+}
+
 .container {
   height: 55rem;
   display: grid;
@@ -59,7 +63,7 @@ h1 {
   background-color: var(--Light-blue);
 }
 
-.left-top__side img {
+.steps-counter img {
   position: absolute;
   top: 0;
   left: 0;
@@ -87,7 +91,7 @@ h1 {
   color: var(--Magnolia);
 }
 
-.right-bottom__side {
+.form-page {
   position: relative;
   background-color: var(--White);
   width: 90%;
@@ -99,11 +103,11 @@ h1 {
   z-index: 1;
 }
 
-.right-bottom__side h1 {
+.form-page h1 {
   color: var(--Marine-blue);
   padding-block-end: 1rem;
 }
-.right-bottom__side p {
+.form-page p {
   color: var(--Cool-gray);
   font-weight: 100;
 }
